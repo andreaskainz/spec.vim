@@ -129,7 +129,7 @@ if !exists("*s:InsertChangelogItem")
 	" Insert a changelog entry at the given line
 	function s:InsertChangelogItem(line)
 		" insert changelog entry
-		call append(a:line, "- ")
+		call append(a:line, "-")
 		" position cursor here
 		call cursor(a:line + 1, 1)
 		" enter insert mode
